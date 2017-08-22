@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Benjamin.NortWindApp.DataAccess
+namespace Benjamin.NorthWindApp.DataAccess
 {
     public class Class1
     {

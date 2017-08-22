@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benjamin.NortWindApp.DataAccess", "Benjamin.NortWindApp.Access\Benjamin.NortWindApp.DataAccess.csproj", "{BE8D70E6-8CFA-4A0B-A143-D40A171FE2FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benjamin.NorthWindApp.DataAccess", "Benjamin.NortWindApp.Access\Benjamin.NorthWindApp.DataAccess.csproj", "{BE8D70E6-8CFA-4A0B-A143-D40A171FE2FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benjamin.NorthWindApp.Entities", "Benjamin.NorthWindApp.Entities\Benjamin.NorthWindApp.Entities.csproj", "{1BE49454-C9F0-4126-95A9-8B43ABB39AB5}"
 EndProject
