@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
@@ -30,7 +31,20 @@ namespace Benjamin.NorthWindApp.DataAccess
             this.connectionString = connectionString;
         }
         
-
+        public DataSet Execute(string sqlQuery)
+        {
+            try
+            {
+                
+                SqlCommand command = new SqlCommand(sqlQuery, new SqlConnection(connectionString) );
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataSet set = new DataSet();
+                adapter.Fill(set);
+                return set;
+            }
+            catch( SqlException ) { throw; }
+            
+        }
 
 
     }
