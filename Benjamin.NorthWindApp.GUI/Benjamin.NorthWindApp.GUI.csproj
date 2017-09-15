@@ -93,5 +93,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Benjamin.NorthWindApp.Entities\Benjamin.NorthWindApp.Entities.csproj">
+      <Project>{1be49454-c9f0-4126-95a9-8b43abb39ab5}</Project>
+      <Name>Benjamin.NorthWindApp.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

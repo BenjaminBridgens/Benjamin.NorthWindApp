@@ -4,8 +4,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
-namespace Benjamin.NortWindApp.DataAccess
+namespace Benjamin.NorthWindApp.DataAccess
 {
+
     public class QueryExecutor
     {
         private String connectionString;
@@ -14,7 +15,7 @@ namespace Benjamin.NortWindApp.DataAccess
         {
             if( String.IsNullOrWhiteSpace(connectionString) )
             {
-                throw new ArgumentException(nameof(connectionString) );
+                throw new ArgumentException(nameof(connectionString));
             }
 
             try
@@ -30,20 +31,20 @@ namespace Benjamin.NortWindApp.DataAccess
 
             this.connectionString = connectionString;
         }
-        
+
         public DataSet Execute(string sqlQuery)
         {
             try
             {
-                
-                SqlCommand command = new SqlCommand(sqlQuery, new SqlConnection(connectionString) );
+
+                SqlCommand command = new SqlCommand(sqlQuery, new SqlConnection(connectionString));
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataSet set = new DataSet();
                 adapter.Fill(set);
                 return set;
             }
             catch( SqlException ) { throw; }
-            
+
         }
 
 

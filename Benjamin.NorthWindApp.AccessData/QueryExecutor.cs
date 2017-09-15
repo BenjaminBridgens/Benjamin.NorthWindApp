@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
-namespace Benjamin.NortWindApp.DataAccess
+namespace Benjamin.NorthWindApp.AccessData
 {
     public class QueryExecutor
     {
